@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Header from '../src/header'
+import AboutMe from '../src/components/aboutMe';
+import Portfolio from '../src/components/portfolio';
+import Contact from '../src/components/contactInfo';
+import Resume from '../src/components/resume';
+import Footer from '../src/footer'
+import '../src/App.css';
+import projects from '../utils/projects'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function PortfolioContents() {
+    //sets current page state to default of About Me
+    const [currentPage, setCurrentPage] = useState('AboutMe');
+    //renders pages based on what the current page is
+    const renderPage = () => {
+        if(currentPage === 'AboutMe') {
+            return <AboutMe/>;
+        }
+        if(currentPage === 'Portfolio') {
+            return <Portfolio projects={projects}/>;
+        }
+        if (currentPage === 'Contact') {
+            return <Contact/>;
+        }
+        return <Resume/>
+    };
+    const handlePageChange = (page) => setCurrentPage(page);
+    return (
+        //adds NavTabs and Footer components
+        <div>
+            <Nav currentPage = {currentPage} handlePageChange={handlePageChange}/>
+            <Header></Header>
+            {renderPage()}
+            <Footer></Footer>
+            </div>
+        
+    );
 }
-
-export default App;
+export default PortfolioContents;
