@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import Header from '../src/header'
-import AboutMe from '../src/components/aboutMe';
-import Portfolio from '../src/components/portfolio';
-import Contact from '../src/components/contactInfo';
-import Resume from '../src/components/resume';
-import Footer from '../src/footer'
+import Header from '../header'
+import AboutMe from '../components/aboutMe';
+import Portfolio from '../components/portfolio';
+import Contact from '../components/contactInfo';
+import Resume from '../components/resume';
+import Footer from '../footer'
 import '../src/App.css';
-import projects from '../utils/projects'
+import Project from '../project'
 
 function PortfolioContents() {
     //sets current page state to default of About Me
@@ -17,7 +17,7 @@ function PortfolioContents() {
             return <AboutMe/>;
         }
         if(currentPage === 'Portfolio') {
-            return <Portfolio projects={projects}/>;
+            return <Portfolio Project={Project}/>;
         }
         if (currentPage === 'Contact') {
             return <Contact/>;
