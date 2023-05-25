@@ -5,7 +5,7 @@ import Portfolio from '../components/portfolio';
 import Contact from '../components/contactInfo';
 import Resume from '../components/resume';
 import Footer from '../footer'
-import '../src/App.css';
+import '../App.css';
 import Project from '../project'
 
 function PortfolioContents() {
