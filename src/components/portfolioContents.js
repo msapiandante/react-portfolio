@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
+import Nav from '../Nav'
 import Header from '../header'
 import AboutMe from '../components/aboutMe';
 import Portfolio from '../components/portfolio';
 import Contact from '../components/contactInfo';
-import Resume from '../components/resume';
 import Footer from '../footer'
-import '../src/App.css';
+
 import Project from '../project'
 
 function PortfolioContents() {
@@ -22,7 +22,6 @@ function PortfolioContents() {
         if (currentPage === 'Contact') {
             return <Contact/>;
         }
-        return <Resume/>
     };
     const handlePageChange = (page) => setCurrentPage(page);
     return (

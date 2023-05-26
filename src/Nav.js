@@ -1,8 +1,25 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+
+const styles = {
+  name: {
+      marginTop: '50px',
+      fontSize: '50px',
+      color: 'white',
+      paddingTop: 85,
+      fontFamily: 'Rockwell, Courier Bold, Courier',
+  },
+  subtitle: {
+      color: 'white',
+      fontSize: '20px',
+      fontFamily: 'Rockwell, Courier Bold, Courier',
+      fontStyle: 'italic'
+  }
+}
 
 function Nav() {
-  const location = useLocation()
+  const location = useLocation();
+
   console.log(location);
   return (
     <div>

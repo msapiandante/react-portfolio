@@ -1,7 +1,31 @@
 import React from 'react';
 import picture from '../images/mspicture.jpg'
 
-function About() {
+const styles = {
+    body: {
+      background: "black",
+      height: 525,
+      width: 800,
+      marginLeft: 'auto',
+      marginRight: 'auto'
+    },
+    header: {
+      color: "white",
+      fontFamily: 'Rockwell, Courier Bold, Courier'
+    },
+    text: {
+      color: "white",
+      fontFamily: 'Rockwell, Courier Bold, Courier'
+    },
+    profilePic: {
+      borderRadius: '50%',
+      width: 125,
+      height: 125,
+      marginLeft: 350
+    }
+  };
+
+function AboutMe() {
     return (
         <div className="container">
             <div className="row">
@@ -22,4 +46,4 @@ function About() {
     );
 }
 
-export default About;
+export default AboutMe;
