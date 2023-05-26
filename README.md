@@ -4,7 +4,7 @@ Earlier in the course I made a portfolio, now that I've developed additional ski
 
 ## Credits
 W3 schools
-Peer Mickey Camarco
+My peers Mickey Camarco and Kendra Fitzgerald
 Instructor Leif and TA Fred 
 https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
