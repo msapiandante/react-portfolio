@@ -1,17 +1,6 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import PortfolioContents from './components/portfolioContents';
 
-function App() {
-  return (
-    <Router>
-      <Switch>
-        {/* Define your routes here */}
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        {/* ...other routes */}
-      </Switch>
-    </Router>
-  );
-}
+
+const App = () => < PortfolioContents/>;
 
 export default App;
