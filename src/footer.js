@@ -1,6 +1,22 @@
 import React from 'react';
-import linkedinLogo from '../images/linkedinLogo.png';
-import githubLogo from '../images/githubLogo.png';
+import linkedinLogo from '../src/images/linkedinLogo.png';
+import githubLogo from '../src/images/githubLogo.png';
+
+const styles = {
+
+  footer: {
+      padding: '10px',
+      textAlign: 'center',
+      marginTop: '30px'
+  
+  },
+  icon: {
+      color: 'white',
+      fontSize: '30px',
+      padding: 5,
+      position: 'relative'
+  }
+}
 
 function Footer() {
   const iconStyle = {
