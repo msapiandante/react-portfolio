@@ -5,12 +5,12 @@ const styles = {
   name: {
     marginTop: '50px',
     fontSize: '50px',
-    color: 'white',
+    color: 'black',
     paddingTop: 85,
     fontFamily: 'Rockwell, Courier Bold, Courier',
   },
   subtitle: {
-    color: 'white',
+    color: 'black',
     fontSize: '20px',
     fontFamily: 'Rockwell, Courier Bold, Courier',
     fontStyle: 'italic'

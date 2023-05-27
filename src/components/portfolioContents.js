@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Nav from '../Nav'
-import Header from '../header'
+// import Header from '../header'
 import AboutMe from '../components/aboutMe';
 import Portfolio from '../components/portfolio';
 import Contact from '../components/contactInfo';
@@ -28,7 +28,7 @@ function PortfolioContents() {
         //adds NavTabs and Footer components
         <div>
             <Nav currentPage = {currentPage} handlePageChange={handlePageChange}/>
-            <Header></Header>
+            {/* <Header></Header> */}
             {renderPage()}
             <Footer></Footer>
             </div>
