@@ -18,23 +18,31 @@ const styles = {
   }
 }
 
-function Footer() {
-  const iconStyle = {
-    width: '24px', // Set the desired width of the icon
-    height: '24px', // Set the desired height of the icon
-  };
+// function Footer() {
+//   const iconStyle = {
+//     width: '24px', // Set the desired width of the icon
+//     height: '24px', // Set the desired height of the icon
+//   };
 
-  return (
-    <div>
-      <a href="https://github.com/msapiandante">
-        <img src={githubLogo} alt="Github" style={iconStyle} />
-      </a>
+//   return (
+//     <div>
+//       <a href="https://github.com/msapiandante">
+//         <img src={githubLogo} alt="Github" style={iconStyle} />
+//       </a>
       
-      <a href="www.linkedin.com/in/melanie-sapiandante-503704137">
-        <img src={linkedinLogo} alt="LinkedIn" style={iconStyle} />
-      </a>
-    </div>
-  );
-}
+//       <a href="www.linkedin.com/in/melanie-sapiandante-503704137">
+//         <img src={linkedinLogo} alt="LinkedIn" style={iconStyle} />
+//       </a>
+//     </div>
+//   );
+// }
 
-export default Footer;
+export default function Footer() {
+  //renders footer with icons that link to various sites on all pages
+  return (
+      <footer style={styles.footer}>
+      <a style= {styles.icon} href="https://github.com/msapiandante"> <img src={githubLogo} alt="Github" style={iconStyle} /></a>
+      <a style= {styles.icon} href="www.linkedin.com/in/melanie-sapiandante-503704137"><img src={linkedinLogo} alt="LinkedIn" style={iconStyle} /></a>
+      </footer>
+  )
+}

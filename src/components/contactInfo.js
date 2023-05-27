@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { validateEmail } from '../utils/validateEmail';
 const styles = {
   body: {
-    background: "black",
+    background: "white",
     height: 525,
     width: 750,
     marginLeft: "auto",
     marginRight: "auto",
   },
   header: {
-    color: "white",
+    color: "black",
     fontFamily: 'Rockwell, Courier Bold, Courier'
   },
   text: {

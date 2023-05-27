@@ -22,13 +22,15 @@ function PortfolioContents() {
         if (currentPage === 'Contact') {
             return <Contact/>;
         }
+        if (currentPage === 'Resume') {
+            return <Resume/>;
+        }
     };
     const handlePageChange = (page) => setCurrentPage(page);
     return (
-        //adds NavTabs and Footer components
         <div>
             <Nav currentPage = {currentPage} handlePageChange={handlePageChange}/>
-            <Header></Header>
+            {/* <Header></Header> */}
             {renderPage()}
             <Footer></Footer>
             </div>

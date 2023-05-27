@@ -52,7 +52,7 @@ const styles = {
         textDecoration: 'none'
     }
 };
-function Portfolio() {
+export default function Portfolio() {
     const projects = [
         {
             image: require('../images/Wow-The-Lunchtime-Odyssey_picture.png'),
@@ -65,16 +65,44 @@ function Portfolio() {
 
     ]
 
+    //     return (
+    //         <div className="container">
+    //             <div className='row cardDiv'>
+    //                 {projects.map(function (project) {
+    //                     return (
+    //                         <div className='col-3'>
+    //                             <Project image={project.image} title={project.title} description={project.description} link={project.githublink} repo={project.githubRepo} id={project.id} />
+    //                         </div>
+    //                     )
+    //                 })}
+    //             </div>
+    //         </div>
+    //     );
+    // }
     return (
-        <div className="container">
-            <div className='row cardDiv'>
-                {projects.map(function (project) {
-                    return (
-                        <div className='col-3'>
-                            <Project image={project.image} title={project.title} description={project.description} link={project.githublink} repo={project.githubRepo} id={project.id} />
+        <div>
+            <h1 style={styles.header}>Portfolio</h1>
+            <div className="row">
+                {projects.map((project) => (
+                    <div
+                        className="post-card col-md-4"
+                        key={project.id}
+                        style={styles.imgCard}>
+                        <div className="card-body">
+                            <h2>
+                                <a  style={styles.title}>
+                                    {project.title}  <img
+                                        src={project.image}
+                                        style={styles.image}
+                                        alt="project main page or placeholder"
+                                    />
+                                </a>
+                            </h2>
+                            <a href={project.gitHubRepo} style={styles.githubRepo}> View Repo</a>
+                            <a href={project.githubLink} style={styles.githubLink}> View Deployed Application</a>
                         </div>
-                    )
-                })}
+                    </div>
+                ))}
             </div>
         </div>
     );
