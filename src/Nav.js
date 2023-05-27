@@ -1,5 +1,4 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 
 const styles = {
   name: {
@@ -16,7 +15,7 @@ const styles = {
     fontStyle: 'italic'
   }
 }
-console.log(location);
+
 export default function Nav({ currentPage, handlePageChange }) {
   return (
 
@@ -24,7 +23,7 @@ export default function Nav({ currentPage, handlePageChange }) {
       <h1 style={styles.name}>Melanie Sapiandante</h1>
       <p style={styles.subtitle}>FullStack Developer</p>
       <nav className="navbar justify-content-end">
-        <ul className="nav nav-tabs">
+        <ul className="nav nav">
           <li className="nav-item">
             <a
               href="#AboutMe"
