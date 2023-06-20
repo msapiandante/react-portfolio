@@ -84,23 +84,23 @@ export default function Portfolio() {
         <div>
             <h1 style={styles.header}>Portfolio</h1>
             <div className="row">
-                {projects.map((project) => (
+                {projects.map((projects) => (
                     <div
                         className="post-card col-md-4"
-                        key={project.id}
+                        key={projects.id}
                         style={styles.imgCard}>
                         <div className="card-body">
                             <h2>
                                 <a  style={styles.title}>
-                                    {project.title}  <img
-                                        src={project.image}
+                                    {projects.title}  <img
+                                        src={projects.image}
                                         style={styles.image}
                                         alt="project main page or placeholder"
                                     />
                                 </a>
                             </h2>
-                            <a href={project.gitHubRepo} style={styles.githubRepo}> View Repo</a>
-                            <a href={project.githubLink} style={styles.githubLink}> View Deployed Application</a>
+                            <a href={projects.gitHubRepo} style={styles.githubRepo}> View Repo</a>
+                            <a href={projects.githubLink} style={styles.githubLink}> View Deployed Application</a>
                         </div>
                     </div>
                 ))}
