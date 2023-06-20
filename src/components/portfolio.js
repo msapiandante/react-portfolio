@@ -62,23 +62,25 @@ export default function Portfolio() {
             githubRepo: 'https://github.com/msapiandante/Wow-The-Lunchtime-Odyssey',
             id: 1
         },
+        {
+            image: require('../images/nexus-app.png'),
+            title: "Nexus",
+            description: "Nexus is a college life social network blog that gives students a platform to discuss their school experiences and connect with other students based on shared interests, universities, or majors. Nexus is a Full-Stack application allows users to sign up and create an account, where they can input profile information, pictures, and write their own posts. Nexus also gives users the ability to view other students' posts, allowing them to ineract with one another. Nexus users can create new posts via their profile. There is a create post button which renders a text box on screen, allowing students to write and submit their own posts. Once posts are created, students can see their posts on their profile, and will notice that their post renders on the homepage as well with other users.",
+            githublink: 'https://agile-beach-11954.herokuapp.com/',
+            githubRepo: 'https://github.com/msapiandante/nexus-app',
+            id: 2
+        },
+        {
+            image: require('../images/sound-swap.png'),
+            title: "Sound Swap",
+            description: "An online marketplace to buy and sell records, albums, and CDs. Users can upload records they own and sell to other users, as well as buy records that have been uploaded to the marketplace. Over the past 10 years, the resurgence of vinyls has led individuals to search out records from their favorite artists, both past and present. Formulating a marketplace that caters to individuals who want to buy and sell records not only garners a sense of community, but also creates a singularized place users can visit where vinyls can be exchanged.",
+            githublink: 'https://guarded-shelf-89712.herokuapp.com/',
+            githubRepo: 'https://github.com/msapiandante/sound-swap',
+            id: 3
+        },
 
     ]
 
-    //     return (
-    //         <div className="container">
-    //             <div className='row cardDiv'>
-    //                 {projects.map(function (project) {
-    //                     return (
-    //                         <div className='col-3'>
-    //                             <Project image={project.image} title={project.title} description={project.description} link={project.githublink} repo={project.githubRepo} id={project.id} />
-    //                         </div>
-    //                     )
-    //                 })}
-    //             </div>
-    //         </div>
-    //     );
-    // }
     return (
         <div>
             <h1 style={styles.header}>Portfolio</h1>
