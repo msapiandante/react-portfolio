@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/validateEmail';
+
 const styles = {
   body: {
     background: "white",
@@ -32,7 +33,7 @@ const styles = {
   },
 };
 
-function ContactInfo() {
+export function ContactInfo() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -134,4 +135,4 @@ function ContactInfo() {
 }
 
 export default ContactInfo;
-export{ validateEmail } from '../utils/validateEmail';
+export{ validateEmail } 
