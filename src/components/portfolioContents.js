@@ -6,8 +6,6 @@ import Contact from '../components/contactInfo';
 import Resume from '../components/resume'
 import Footer from '../footer'
 
-import Project from '../project'
-
 function PortfolioContents() {
     //sets current page state to default of About Me
     const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -17,7 +15,7 @@ function PortfolioContents() {
             return <AboutMe />;
         }
         if (currentPage === 'Portfolio') {
-            return <Portfolio Project={Project} />;
+            return <Portfolio Projects={Projects} />;
         }
         if (currentPage === 'Contact') {
             return <Contact/>;
