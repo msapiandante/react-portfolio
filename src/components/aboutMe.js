@@ -14,7 +14,7 @@ const styles = {
       fontFamily: 'Rockwell, Courier Bold, Courier'
     },
     text: {
-      color: "white",
+      color: "black",
       fontFamily: 'Rockwell, Courier Bold, Courier'
     },
     profilePic: {
