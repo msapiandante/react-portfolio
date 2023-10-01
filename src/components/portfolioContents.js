@@ -5,7 +5,7 @@ import Portfolio from './portfolio';
 import Contact from './contactInfo';
 import Resume from './resume';
 import Footer from '../footer';
-// import Projects from './portfolio';
+import Projects from './portfolio';
 
 function PortfolioContents() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
