@@ -32,6 +32,7 @@ export default function Nav({ currentPage, handlePageChange }) {
                 currentPage === "AboutMe" ? "nav-link active" : "nav-link"
               }
             >
+              About Me
             </a>
           </li>
           <li className="nav-item">
