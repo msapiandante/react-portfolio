@@ -1,6 +1,12 @@
-import PortfolioContents from './components/portfolioContents';
+import React from 'react';
+import PortfolioContents from './PortfolioContents';
 
-
-const App = () => < PortfolioContents/>;
+function App() {
+  return (
+    <div>
+      <PortfolioContents />
+    </div>
+  );
+}
 
 export default App;
