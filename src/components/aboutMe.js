@@ -36,9 +36,7 @@ function AboutMe() {
                 </div>
                 <div className="col-md-9">
                     <p style={styles.body}>
-                        I am a first-generation, queer Filipinx based in Philadelphia. I am eager about venturing into industries where women and women of color are often under represented.
-
-                        Currently, I am enrolled in University of Pennsylvania's Full-Time Full Stack Web Development Bootcamp and will graduate June 2023. My experiences in the healthcare, social work and restaurant industries have allowed me to build and refine strong interpersonal skills and adaptability that enrich my position as a web developer.
+                    Former Head Chef leveraging experience in social work and restaurant service industries transitioning into the role of Full Stack Web Developer with a certificate from University of Pennsylvania. Adaptable. Dedicated. Creative problem solving and management under pressure. Exceptional communication, strong networking and organizational skills. Several collaborations with peers to build successful web apps from start to finish.
                     </p>
 
 
